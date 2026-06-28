@@ -16,9 +16,11 @@ jobs:
           - version: "1.21.1"
             dir: "1.21.1"
             java: "21"
+            gradle: "8.7"
           - version: "26.1"
             dir: "26.1"
             java: "25"
+            gradle: "9.4"
 
     name: Build (${{ matrix.version }})
 
@@ -32,7 +34,7 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.12'
+          gradle-version: ${{ matrix.gradle }}
 
       - name: Build
         working-directory: ${{ matrix.dir }}

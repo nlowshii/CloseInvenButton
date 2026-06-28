@@ -14,10 +14,10 @@ jobs:
       matrix:
         include:
           - version: "1.21.1"
-            dir: "."
+            dir: "1.21.1"
             java: "21"
           - version: "26.1"
-            dir: "v26.1"
+            dir: "26.1"
             java: "25"
 
     name: Build (${{ matrix.version }})

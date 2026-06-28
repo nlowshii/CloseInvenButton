@@ -11,6 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include:
           - version: "1.21.1"
@@ -20,7 +21,7 @@ jobs:
           - version: "26.1"
             dir: "26.1"
             java: "25"
-            gradle: "9.4"
+            gradle: "9.4.0"
 
     name: Build (${{ matrix.version }})
 

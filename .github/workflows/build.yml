@@ -22,7 +22,7 @@ jobs:
             java: "21"
           - version: "26.1"
             dir: "26.1"
-            java: "25"
+            java: "21"
 
     name: Build (${{ matrix.version }})
 

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "close-button",
+  "version": "${version}",
+  "name": "Close Button",
+  "description": "Adds a close (X) button to all inventory screens, like Bedrock Edition.",
+  "authors": ["nlowshii"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "accessWidener": "close-button.accesswidener",
+  "entrypoints": {
+    "client": [
+      "id.nlowshii.closebutton.CloseButtonMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

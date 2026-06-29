@@ -15,17 +15,17 @@ jobs:
       matrix:
         include:
           - version: "1.21.1"
-            dir: "1.21.1"
+            dir: "v1.21.1"
             java: "21"
             gradle: "8.12"
           - version: "1.21.5"
-            dir: "1.21.5"
+            dir: "v1.21.5"
             java: "21"
             gradle: "8.12"
           - version: "26.1"
-            dir: "26.1"
+            dir: "v26.1"
             java: "21"
-            gradle: "current"
+            gradle: "9.2"
 
     name: Build (${{ matrix.version }})
 

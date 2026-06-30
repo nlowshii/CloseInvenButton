@@ -24,7 +24,7 @@ jobs:
             gradle: "8.12"
           - version: "26.1"
             dir: "26.1"
-            java: "21"
+            java: "25"
             gradle: "current"
 
     name: Build (${{ matrix.version }})
